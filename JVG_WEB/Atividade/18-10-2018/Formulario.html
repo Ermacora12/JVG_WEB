@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		
+		<meta charset="UTF-8"/>
+	
+		<title> Formulário  </title>
+		
+		<style>
+				body{
+					background:url('tec-roxo.jpg');;
+				}
+				
+				.sec-form .centro{
+					max-width:70%;
+					margin: 0 auto;
+					display:table;
+				}
+				
+				.tx{
+					border: 1px solid #fff;
+					border-radius: 29px;
+					background: transparent;
+					width:400px;
+					height:50px;
+					padding-left:10px;
+					margin-bottom:5%;
+					color:#00f;
+				}
+				
+				.ta{
+					height:150px;
+				}
+				
+				.lb{
+					display: block;
+				}
+				
+				.bt{
+					border:none;
+					background: linear-gradient(to right, #59055F, #3D248F, #59055F);
+					color:#fff;
+					border-radius: 29px;
+					float:right;
+					margin-top:10px;
+					padding: 10px 20px;
+					font-size:16px;
+					width:400px;
+					height:50px;
+				}
+				.bt:hover{
+					cursor:pointer;
+					background: linear-gradient(to right, #3D248F, #59055F, #3D248F);
+				}
+				
+				::-webkit-input-placeholder{
+					color:white;
+				}
+				
+			</style>
+
+	</head>
+
+			<body>
+			
+			<section class = "sec-form">
+			
+				<div class = "centro">
+				
+					<form>
+						<div>
+							<label class="lb"> Nome: </label>
+							<input type = "text" placeholder = "Insira seu Nome aqui"  required  class="tx"/>  <!-- caixa de texto -->
+						</div>
+						
+						<div>
+							<label class="lb"> E-mail: </label>
+							<input type ="email" placeholder = "Insira seu E-mail aqui" required class="tx"/> 
+						</div>
+						
+						<div>
+							<label class="lb"> Assunto: </label>
+							<input type = "text" placeholder = "Digite o Assunto aqui" maxlength = "100" required class="tx"/> 
+						</div>
+						
+						<div>
+							<label class="lb"> Mensagem: </label>
+							<textarea rows = "5" cols = "50" maxlength = "300" placeholder = "Descrição alguma informação necessaria" class="tx ta">  </textarea>
+						</div>
+						
+						<div>
+							<input type = "submit" value = "Enviar" class="bt"/>
+						</div>					
+					</form>
+					
+				</div>
+
+			</section>
+				
+			</body>
+
+</html>
